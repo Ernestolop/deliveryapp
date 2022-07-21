@@ -1,0 +1,63 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.testimonio{
+    max-width: 700px;
+    margin: 0 auto v.$sep20 auto;
+    color: v.$blanco;
+    background-color: v.$secundario;
+    border-radius: v.$sep10;
+    padding: v.$sep20;
+    @include m.desktop { 
+        margin: 0;
+        max-width:unset;
+        &:first-of-type{
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+        &:nth-child(2){
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+        &:nth-child(3){
+            grid-column: 5/6;
+            grid-row: 1/3;
+        }
+        &:nth-child(4){
+            grid-column: 1/3;
+            grid-row: 2/3;
+        }
+        &:nth-child(5){
+            grid-column: 3/5;
+            grid-row: 2/3;
+        }
+    }
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+    &__header{
+        display: flex;
+        align-items: center;
+        gap: v.$sep20;
+    }
+    &__img{
+        border-radius: 50%;
+    }
+    &__nombre{
+        font-weight: 900;
+        font-size: v.$font-size-lg;
+        margin: 0;
+    }
+    &__dicho{
+        display: flex;
+        margin: v.$sep20 0;
+        align-items: center;
+        margin: 0;
+        &::before{
+            content: ' " ';
+            font-size: 6.25rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            opacity: .2;
+        }
+    }
+}

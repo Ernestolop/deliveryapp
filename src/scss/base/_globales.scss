@@ -1,0 +1,61 @@
+@use 'variables' as v;
+
+html{
+    box-sizing: border-box;
+    font-size: 14px;
+}
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+@media (min-width:400px){
+    html{
+        font-size: 16px;
+    }
+}
+@media (min-width:1024px){
+    html{
+        font-size: 18px;
+    }
+}
+
+
+
+body{
+    font-size: 1rem;
+    font-family: v.$fuentePrincipal;
+    line-height: 1.5;
+    font-size: v.$font-size-md;
+}
+img, 
+video,
+audio{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: v.$negro;
+}
+h1, h2, h3{
+    margin: 0 0 v.$sep50 0;
+    line-height: 1.2;
+    font-size: v.$font-size-xl;
+}
+h1{
+    font-weight: 900;
+}
+h2{
+    font-weight: 700;
+}
+h3{
+    font-weight: 700;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+blockquote{
+    margin: 0;
+}

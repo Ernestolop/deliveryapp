@@ -1,0 +1,20 @@
+@use 'variables' as v;
+
+[class$="__contenedor"]{
+    max-width: 75rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.text-center{
+    text-align: center;
+}
+.vertical-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.texto-degradado{
+    color: transparent;
+    background: linear-gradient(to right, v.$primario 0%, v.$secundario 100%);
+    background-clip: text;
+}

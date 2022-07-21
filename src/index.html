@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Delivery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+        <header class="header text-center">
+            <div class="header__contenedor">
+                <div class="barra">
+                    <img src="img/logo.svg" alt="Logo appcomida" class="barra__logo" width="300" height="100">
+                    <nav class="barra__navegacion">
+                        <a href="#" class="barra__link">Iniciar Sesión</a>
+                        <a href="#" class="barra__link">Crear Cuenta</a>
+                        <a href="#" class="barra__link barra__link--registrar">Registrar Restaurant</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="delivery">
+            <div class="delivery__contenedor">
+                <div class="delivery__contenido">
+                    <h2 class="delivery__heading text-center">Encuentra y Pide comida de tu Restaurante favorito</h2>
+                    <form class="delivery__formulario">
+                        <div class="delivery__campo">
+                            <label for="restaurant" class="delivery__label">Restaurant</label>
+                            <input type="text" id="restaurant" class="delivery__input" placeholder="Tacos Mexico">
+                        </div>
+                        <div class="delivery__campo">
+                            <label for="platillo" class="delivery__label">Platillo</label>
+                            <input type="text" id="platillo" class="delivery__input" placeholder="Pizza, enzalada, hamburguesa">
+                        </div>
+                        <input class="delivery__btn" value="Buscar" type="submit">
+                    </form>
+                </div>
+                <img src="img/dibujo_repartidor.svg" alt="Imagen repartidor" class="delivery__img" height="283" width="300">
+            </div>
+        </section>
+
+        <section class="pasos">
+            <img src="img/wave.svg" alt="Imagen wave" class="pasos__wave" height="200" width="768">
+            <div class="pasos__backgound">
+                <div class="pasos__contenedor">
+                    <h2 class="pasos__heading text-center">¿Cómo funciona?<span class="pasos__span">tan fácil como 1,2 y 3</span></h2>
+                    <div class="pasos__grid">
+                        <picture>
+                             <source srcset="img/paso_1.avif" type="image/avif">
+                             <source srcset="img/paso_1.webp" type="image/webp">
+                             <img class="pasos__paso" src="img/paso_1.jpg" loading="lazy" width="500" height="900" alt="Imagen paso 1">
+                        </picture> 
+                        <picture>
+                             <source srcset="img/paso_2.avif" type="image/avif">
+                             <source srcset="img/paso_2.webp" type="image/webp">
+                             <img class="pasos__paso" src="img/paso_2.jpg" loading="lazy" width="500" height="900" alt="Imagen paso 1">
+                        </picture>
+                        <picture>
+                             <source srcset="img/paso_3.avif" type="image/avif">
+                             <source srcset="img/paso_3.webp" type="image/webp">
+                             <img class="pasos__paso" src="img/paso_3.jpg" loading="lazy" width="500" height="900" alt="Imagen paso 1">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimoniales">
+            <h2 class="testimoniales__heading text-center">Testimoniales</h2>
+            <div class="testimoniales__contenedor">
+                <blockquote class="testimonio">
+                    <header class="testimonio__header">
+                        <picture class="testimonio__pic1" >
+                             <source srcset="img/testimonial1.avif" type="image/avif">
+                             <source srcset="img/testimonial1.webp" type="image/webp">
+                             <img class="testimonio__img" src="img/testimonial1.jpg" loading="lazy" width="100" height="100" alt="Imagen Juan Perez">
+                        </picture>
+                        <div class="testimonio__autor">
+                            <p class="testimonio__nombre">Juan Perez</p>
+                            <picture class="testimonio__pic2" >
+                                 <source srcset="img/estrellas.avif" type="image/avif">
+                                 <source srcset="img/estrellas.webp" type="image/webp">
+                                 <img class="testimonio__calificacion" src="img/estrellas.jpg" loading="lazy" width="178" height="29" alt="Imagen calificacion estrellas">
+                            </picture>
+                        </div>
+                    </header>
+                    <p class="testimonio__dicho">Una excelente app, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o efectivo según me convenga.</p>
+                    </blockquote><!-- fin testimonio -->
+                    <blockquote class="testimonio">
+                        <header class="testimonio__header">
+                            <picture class="testimonio__pic1" >
+                                <source srcset="img/testimonial2.avif" type="image/avif">
+                                <source srcset="img/testimonial2.webp" type="image/webp">
+                                <img class="testimonio__img" src="img/testimonial2.jpg" loading="lazy" width="100" height="100" alt="Imagen Itzel Cruz">
+                            </picture>
+                            <div class="testimonio__autor">
+                                <p class="testimonio__nombre">Itzel Cruz</p>
+                                <picture class="testimonio__pic2" >
+                                    <source srcset="img/estrellas.avif" type="image/avif">
+                                    <source srcset="img/estrellas.webp" type="image/webp">
+                                    <img class="testimonio__calificacion" src="img/estrellas.jpg" loading="lazy" width="178" height="29" alt="Imagen calificacion estrellas">
+                                </picture>
+                            </div>
+                        </header>
+                        <p class="testimonio__dicho">Una excelente app, puedo seleccionar de una gran cantidad.</p>
+                    </blockquote><!-- fin testimonio -->
+                    <blockquote class="testimonio">
+                        <header class="testimonio__header">
+                            <picture class="testimonio__pic1" >
+                                <source srcset="img/testimonial5.avif" type="image/avif">
+                                <source srcset="img/testimonial5.webp" type="image/webp">
+                                <img class="testimonio__img" src="img/testimonial5.jpg" loading="lazy" width="100" height="100" alt="Imagen 
+                                Rocio Rodriguez">
+                            </picture>
+                            <div class="testimonio__autor">
+                                <p class="testimonio__nombre">
+                                    Rocio Rodriguez</p>
+                                <picture class="testimonio__pic2" >
+                                    <source srcset="img/estrellas.avif" type="image/avif">
+                                    <source srcset="img/estrellas.webp" type="image/webp">
+                                    <img class="testimonio__calificacion" src="img/estrellas.jpg" loading="lazy" width="178" height="29" alt="Imagen calificacion estrellas">
+                                </picture>
+                            </div>
+                        </header>
+                        <p class="testimonio__dicho">Una excelente app, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o efectivo según me convenga.</p>
+                    </blockquote><!-- fin testimonio -->
+                    <blockquote class="testimonio">
+                        <header class="testimonio__header">
+                            <picture class="testimonio__pic1" >
+                                <source srcset="img/testimonial4.avif" type="image/avif">
+                                <source srcset="img/testimonial4.webp" type="image/webp">
+                                <img class="testimonio__img" src="img/testimonial4.jpg" loading="lazy" width="100" height="100" alt="Imagen 
+                                Cynthia V">
+                            </picture>
+                            <div class="testimonio__autor">
+                                <p class="testimonio__nombre">Cynthia V</p>
+                                <picture class="testimonio__pic2" >
+                                    <source srcset="img/estrellas.avif" type="image/avif">
+                                    <source srcset="img/estrellas.webp" type="image/webp">
+                                    <img class="testimonio__calificacion" src="img/estrellas.jpg" loading="lazy" width="178" height="29" alt="Imagen calificacion estrellas">
+                                </picture>
+                            </div>
+                        </header>
+                        <p class="testimonio__dicho">Una excelente app, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o efectivo según me convenga.</p>
+                    </blockquote><!-- fin testimonio -->
+                    <blockquote class="testimonio">
+                        <header class="testimonio__header">
+                            <picture class="testimonio__pic1" >
+                                <source srcset="img/testimonial3.avif" type="image/avif">
+                                <source srcset="img/testimonial3.webp" type="image/webp">
+                                <img class="testimonio__img" src="img/testimonial3.jpg" loading="lazy" width="100" height="100" alt="Imagen 
+                                Jose Hernandez">
+                            </picture>
+                            <div class="testimonio__autor">
+                                <p class="testimonio__nombre">Jose Hernandez</p>
+                                <picture class="testimonio__pic2" >
+                                    <source srcset="img/estrellas.avif" type="image/avif">
+                                    <source srcset="img/estrellas.webp" type="image/webp">
+                                    <img class="testimonio__calificacion" src="img/estrellas.jpg" loading="lazy" width="178" height="29" alt="Imagen calificacion estrellas">
+                                </picture>
+                            </div>
+                        </header>
+                        <p class="testimonio__dicho">Una excelente app, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o efectivo según me convenga.</p>
+                    </blockquote><!-- fin testimonio -->
+            </div>
+        </section>
+</body>
+</html>

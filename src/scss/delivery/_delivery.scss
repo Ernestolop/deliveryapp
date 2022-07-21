@@ -1,0 +1,50 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.delivery{
+    &__contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: v.$sep20;
+        @include m.tablet { 
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-items: center;
+        }
+    }
+    &__contenido{
+        background-color: v.$primario;
+        padding: calc(v.$sep50*2) calc(v.$sep20*2);
+    }
+    &__heading{
+        color: v.$blanco;
+    }
+    &__formulario{
+        display: flex;
+        flex-direction: column;
+        gap: v.$sep20;
+    }
+    &__label{
+        display: block;
+        color: v.$blanco;
+        font-size: v.$font-size-lg;
+    }
+    &__input{
+        width: 100%;
+        padding:v.$sep10;
+    }
+    &__btn{
+        font-size: v.$font-size-lg;
+        padding:v.$sep10;
+        font-weight: 900;
+        width: 100%;
+        @include m.boton(v.$secundario, v.$blanco)
+    }
+    &__img{
+        width: 18.75rem;
+        @include m.desktop { 
+            width: 100%;
+        }
+    }
+}

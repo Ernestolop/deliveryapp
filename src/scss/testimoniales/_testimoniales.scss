@@ -1,0 +1,12 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.testimoniales{
+    margin-top: v.$sep50;
+    &__contenedor{
+        @include m.desktop{ 
+            display: grid;
+            @include m.grid(5, v.$sep20);
+        }
+    }
+}
